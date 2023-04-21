@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="image/png" sizes="16x16" href="../../favicon.png">
     <title>Vincent Van Gogh: A Tribute Website</title>
 </head>
@@ -25,8 +26,7 @@
         <header>
             <div id="img-div">
                 <h1 id="title">Step <i class="italic">into</i> Van Gogh's World</h1>
-                <div id="image-container"><img id="image"
-                        src="img/self-portrait.png">
+                <div id="image-container"><img id="image" src="img/self-portrait.png">
                 </div>
                 <p id="img-caption">Van Gogh's art reflected his innermost thoughts and emotions, resulting in
                     timeless masterpieces that continue to inspire people today.</p>
@@ -35,7 +35,7 @@
 
         <!-- TEXT INFORMATION ABOUT VAN GOGH -->
         <section id="tribute-info">
-            <div class="text">
+            <div class="text" data-aos="fade" data-aos-duration="600" data-aos-easing="ease-in">
                 <span>1853 - 1890</span>
                 <h2> Vincent <br> van Gogh</h2>
                 <p>Was a Dutch post-impressionist painter who created a vast body of work that had a profound impact on
@@ -50,15 +50,15 @@
                     emotion and universal themes through his distinctive style.</p>
             </div>
 
-            <div class="van-gogh-frame"><img
-                    src="img/russel-portrait.png"
+            <div class="van-gogh-frame" data-aos="fade" data-aos-duration="600" data-aos-easing="ease-in"><img src="img/russel-portrait.png"
                     alt="A portrait of Vincent van Gogh made by John Russel"></div>
         </section>
 
         <!-- A SIMPLE QUOTE FROM THE ARTIST -->
         <section id="quote">
             <img src="img/starry_night_rhone.png" alt="Starry Night Over the Rhône by Vicent Van Gogh">
-            <p>"If you hear a voice within you say 'you cannot paint,' then by all means paint, and that voice will be silenced."<span><i class="italic">— Vicent van Gogh</i></span></p>
+            <p data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in">"If you hear a voice within you say 'you cannot paint,' then by all means paint, and that voice will be
+                silenced."<span><i class="italic">— Vicent van Gogh</i></span></p>
         </section>
 
         <!-- GALLERY WITH THE ARTIST'S MOST FAMOUS PAINTINGS -->
@@ -66,42 +66,38 @@
             <h2>The Masterpieces That Changed Art History</h2>
 
             <div class="art-pieces">
-                <div class="art starry">
+                <div class="art starry" data-aos="fade" data-aos-duration="300" data-aos-easing="ease-in">
                     <img src="img/starry_night.png" alt="">
                     <h3 class="piece-name">Starry Night</h3>
                     <p class="description"><i>1889</i></p>
                 </div>
 
-                <div class="art sunflower">
+                <div class="art sunflower" data-aos="fade" data-aos-duration="300" data-aos-easing="ease-in" data-aos-delay="200">
                     <img src="img/sunflower.png" alt="Sunflowers by Vincent Van Gogh">
                     <h3 class="piece-name">Sunflowers</h3>
                     <p class="description">1889</p>
                 </div>
 
-                <div class="art bedroom">
-                    <img src="img/bedroom.png"
-                        alt="The Bedroom in Arles by Vincent Van Gogh">
+                <div class="art bedroom" data-aos="fade" data-aos-duration="300" data-aos-easing="ease-in" data-aos-delay="400">
+                    <img src="img/bedroom.png" alt="The Bedroom in Arles by Vincent Van Gogh">
                     <h3 class="piece-name">The Bedroom in Arles</h3>
                     <p class="description">888</p>
                 </div>
 
-                <div class="art self-portrait">
-                    <img src="img/self-portrait-gallery.png"
-                        alt="Self-Portrait by Vincent Van Gogh">
+                <div class="art self-portrait" data-aos="fade" data-aos-duration="300" data-aos-easing="ease-in">
+                    <img src="img/self-portrait-gallery.png" alt="Self-Portrait by Vincent Van Gogh">
                     <h3 class="piece-name">Self-Portrait</h3>
                     <p class="description">1889</p>
                 </div>
 
-                <div class="art potato">
-                    <img src="img/potato.png"
-                        alt="The Potato Eaters by Vicent Van Gogh">
+                <div class="art potato" data-aos="fade" data-aos-duration="300" data-aos-easing="ease-in" data-aos-delay="200">
+                    <img src="img/potato.png" alt="The Potato Eaters by Vicent Van Gogh">
                     <h3 class="piece-name">The Potato Eaters</h3>
                     <p class="description">1885</p>
                 </div>
 
-                <div class="art irises">
-                    <img src="img/irises.png"
-                        alt="Irises by Vicent Van Gogh">
+                <div class="art irises" data-aos="fade" data-aos-duration="300" data-aos-easing="ease-in" data-aos-delay="400">
+                    <img src="img/irises.png" alt="Irises by Vicent Van Gogh">
                     <h3 class="piece-name">Irises</h3>
                     <p class="description">1889</p>
                 </div>
@@ -110,8 +106,16 @@
 
         <!-- FOOTER -->
         <footer id="more-information">
-            <p>To learn more about the artist and his work, feel free to explore the <a href="https://www.vangoghmuseum.nl/en" id="tribute-link" target="_blank">Van Gogh Museum website.</a></p>
+            <p>To learn more about the artist and his work, feel free to explore the <a
+                    href="https://www.vangoghmuseum.nl/en" id="tribute-link" target="_blank">Van Gogh Museum
+                    website.</a></p>
         </footer>
+
+        <!-- SCRIPTS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </main>
 </body>
 
