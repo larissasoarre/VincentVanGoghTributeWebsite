@@ -14,7 +14,7 @@ The Van Gogh's website includes:
 ## ⚙️ Instalation
 To install the project, follow these steps:
 
-1. Fork the project from [this repository](https://github.com/larissasoarre/NetflixSurveyForm).
+1. Fork the project from [this repository](https://github.com/larissasoarre/VincentVanGoghTributeWebsite).
 2. Clone the forked repository to your local machine using the command 'git clone'.
 3. Open the index.html file in your web browser to view the website.
 
